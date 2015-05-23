@@ -17,6 +17,7 @@
         res.header("Access-Control-Allow-Origin", "http://web-staging-runnabledemo.runnableapp.com:3000");
         res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
         res.header("Access-Control-Allow-Headers", "X-Requested-With,X-Powered-By,Content-Type");
+        res.header("Access-Control-Allow-Credentials", "true");
         if (req.method === 'OPTIONS') {
             res.status(200).end();
         } else {
