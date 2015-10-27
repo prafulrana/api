@@ -16,6 +16,12 @@
       res.json(data);
     });
   });
+  
+  router.get('/perfendpoint', function(req, res) {
+    db.todos.find(function(err, data) {
+      res.send("thebearhasspoken");
+    });
+  });
 
   router.post('/api/todos', function(req, res) {
     db.todos.insert(req.body, function(err, data) {
