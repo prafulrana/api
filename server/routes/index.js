@@ -19,7 +19,7 @@
   
   router.get('/perfendpoint', function(req, res) {
     db.todos.find(function(err, data) {
-      res.send("thebearhasspoken");
+      res.end("thebearhasspoken");
     });
   });
 
